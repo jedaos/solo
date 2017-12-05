@@ -9,6 +9,30 @@
   </head>
 
   <body>
+    <div id="sidebar">
+      <div id="logo">
+        <%= link_to root_path do %>
+          <%= image_tag "gas.jpg" %>
+        <% end %>
+
+      </div>
+          <ul>
+            <li class="category">Reviews Gasnap 2.0</li>
+            <li>About Gasnap 2.0</li>
+            <li><%= link_to "Blog Gasnap 2.0", root_path %></li>
+          </ul>
+
+          <ul>
+            <li class="category">Social Scene</li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://github.com">Github</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="mailto:hey@gasnap.com">Email</a></li>
+          </ul>
+
+          <p class="sign_in">Admin Login</p>
+    </div>
+
     <%= yield %>
   </body>
 </html>
