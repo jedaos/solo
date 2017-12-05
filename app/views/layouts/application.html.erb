@@ -32,7 +32,14 @@
 
           <p class="sign_in">Admin Login</p>
     </div>
-
-    <%= yield %>
+      <div id="main_content">
+        <div id="header">
+          <p>All Posts</p>
+          .<button type="button" name="button">
+              <%= link_to "New Post",new_post_path %>
+          </button>
+        </div>
+        <%= yield %>
+      </div>
   </body>
 </html>
